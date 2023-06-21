@@ -1,0 +1,41 @@
+.buttonRemove{
+    font-family:  san-serif;
+    color:aliceblue;
+    background-color: #3f51b5;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.buttonRemove:hover,.buttonRemove:focus{
+    background-color: #FF6962;
+}
+
+.itemTransactionSalary{
+    border: solid 1px green;
+    border-radius: 10px;
+    box-shadow: -1px 4px 26px -5px rgba(27,219,17,1);
+    max-width: fit-content;
+    padding: 10px;
+    transition: box-shadow 0.3s;
+}
+
+.itemTransactionSalary:hover,
+.itemTransactionSalary:focus{
+    box-shadow: -1px 4px 26px 0px rgba(13,255,0,1);
+}
+
+.itemTransactionExpanse {
+    border: solid 1px #FF6962;
+    border-radius: 10px;
+    box-shadow: -1px 4px 26px -5px #FF6962;
+    max-width: fit-content;
+    padding: 10px;
+    transition: box-shadow 0.3s
+}
+
+.itemTransactionExpanse:hover,
+.itemTransactionExpanse:focus{
+    box-shadow: -1px 4px 26px 0px #FF6962;
+}
+
