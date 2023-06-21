@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/itstar-test-app/static/css/main.d97be491.css",
-    "main.js": "/itstar-test-app/static/js/main.2923f31e.js",
+    "main.js": "/itstar-test-app/static/js/main.10e1f061.js",
     "static/css/462.243362f0.chunk.css": "/itstar-test-app/static/css/462.243362f0.chunk.css",
     "static/js/462.883ba6aa.chunk.js": "/itstar-test-app/static/js/462.883ba6aa.chunk.js",
     "static/css/625.6281333a.chunk.css": "/itstar-test-app/static/css/625.6281333a.chunk.css",
@@ -9,7 +9,7 @@
     "static/js/204.b86530e3.chunk.js": "/itstar-test-app/static/js/204.b86530e3.chunk.js",
     "index.html": "/itstar-test-app/index.html",
     "main.d97be491.css.map": "/itstar-test-app/static/css/main.d97be491.css.map",
-    "main.2923f31e.js.map": "/itstar-test-app/static/js/main.2923f31e.js.map",
+    "main.10e1f061.js.map": "/itstar-test-app/static/js/main.10e1f061.js.map",
     "462.243362f0.chunk.css.map": "/itstar-test-app/static/css/462.243362f0.chunk.css.map",
     "462.883ba6aa.chunk.js.map": "/itstar-test-app/static/js/462.883ba6aa.chunk.js.map",
     "625.6281333a.chunk.css.map": "/itstar-test-app/static/css/625.6281333a.chunk.css.map",
@@ -18,6 +18,6 @@
   },
   "entrypoints": [
     "static/css/main.d97be491.css",
-    "static/js/main.2923f31e.js"
+    "static/js/main.10e1f061.js"
   ]
 }
