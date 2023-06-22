@@ -7,7 +7,7 @@ const Layout = () => {
   return (
     <>
       <header className={style.header}>
-        <ul>
+        <ul className={style.navList}>
           <li>
             <NavLink className={style.navLink} to="/">
               Wallet

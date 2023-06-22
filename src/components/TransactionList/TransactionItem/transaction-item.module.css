@@ -5,6 +5,7 @@
     border-radius: 5px;
     cursor: pointer;
     margin-left: 5px;
+    transition: 0.5s background-color;
 }
 
 .buttonRemove:hover,.buttonRemove:focus{

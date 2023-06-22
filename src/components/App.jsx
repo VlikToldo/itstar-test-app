@@ -6,6 +6,7 @@ import Layout from "./Layout/Layout";
 const TransactionHistoryPage = lazy(() =>
   import("../pages/TransactionHistoryPage/TransactionHistoryPage")
 );
+const ErrorPage = lazy(()=> import("../pages/ErrorPage/ErrorPage"))
 const WalletPage = lazy(() => import("../pages/WalletPage/WalletPage"));
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
           path="transactions-history"
           element={<TransactionHistoryPage />}
         />
+        <Route path='*' element={<ErrorPage/>}/>
       </Route>
     </Routes>
   );
