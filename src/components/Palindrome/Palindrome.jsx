@@ -1,28 +1,31 @@
 import { useState } from "react";
-import swal from 'sweetalert';
+import swal from "sweetalert";
 
+import styles from "./palindrome.module.css";
 
 const Palindrome = () => {
   const [state, setState] = useState({
-    text: ""
+    text: "",
   });
 
   const checkPalindrome = (text) => {
-    const cleanText = text.replace(/[^a-zA-Z]/g, '');
-    const revers = cleanText.split('').reverse().join('').toUpperCase();
-    return cleanText === revers;
-  }
+    const normalizedText = text
+      .replace(/[^a-zA-Z0-9а-яА-ЯіїєґїҐЇЄ]/g, "")
+      .toUpperCase();
+    const revers = normalizedText.split("").reverse().join("");
+    return normalizedText === revers;
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const {text} = state;
+    const { text } = state;
     if (checkPalindrome(text)) {
       return swal("true");
     }
-    swal('false')
+    swal("false");
     setState({
-    text: ""
-  });
+      text: "",
+    });
   };
 
   const handleChange = ({ target }) => {
@@ -32,20 +35,23 @@ const Palindrome = () => {
     });
   };
 
-  const {text} = state;
+  const { text } = state;
 
   return (
     <div>
       <form onSubmit={handleSubmit}>
-        <label>Palindrome</label>
-        <input
-          name="text"
-          value={text}
-          onChange={handleChange}
-          required
-          type="text"
-        />
-        <button>Check</button>
+        <div className={styles.boxInput}>
+          <label>Palindrome</label>
+          <input
+            className={styles.textField}
+            name="text"
+            value={text}
+            onChange={handleChange}
+            required
+            type="text"
+          />
+          <button className={styles.buttonCheck}>Check</button>
+        </div>
       </form>
     </div>
   );

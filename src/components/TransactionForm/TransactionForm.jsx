@@ -80,6 +80,7 @@ const TransactionForm = () => {
             value={total}
             className={styles.textField}
             onChange={handleChange}
+            min="1"
             max="100000"
             title="Тo more than 100,000"
             required

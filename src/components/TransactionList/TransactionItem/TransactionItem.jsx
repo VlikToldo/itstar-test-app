@@ -1,6 +1,6 @@
 import { useDispatch } from "react-redux";
 
-// import PropTypes from "prop-types";
+import PropTypes from "prop-types";
 
 import { removeTransaction } from "../../../redux/wallet/wallet-slice";
 
@@ -33,3 +33,12 @@ const TransactionItem = ({ id, name, total, time, type }) => {
 };
 
 export default TransactionItem;
+
+
+TransactionItem.propTypes = {
+  id: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  total: PropTypes.string.isRequired,
+  time: PropTypes.string.isRequired,
+  type: PropTypes.string.isRequired
+};
